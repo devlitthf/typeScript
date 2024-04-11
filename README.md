@@ -1,7 +1,7 @@
-Installation Guid of TypeScript
+# Installation Guid of TypeScript
 ==================================
 
-Intro: - TypeScript we use for development not for Production
+# Intro: - TypeScript we use for development not for Production
 
 1. If you want to install TypeScript firstly node should be installed in your system
 2. For installing TypeScript just type in terminal "npm install -g typescript"
