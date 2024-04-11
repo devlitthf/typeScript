@@ -26,12 +26,39 @@
 // console.log(gTotal([3,2,4]));
 // In this function parameter is numbers but in the return line there is numder which is a bug but js is not indicating that error until terminating the code
 
-const user = {
-    firstName: "Devraj Raikwar",
-    lastName: "Raikwar",
-    Role: "Student"
-}
+// const user = {
+//     firstName: "Devraj Raikwar",
+//     lastName: "Raikwar",
+//     Role: "Student"
+// }
 
-console.log(user.firstName)
+// console.log(user.firstName)
 
 // In the java script quick tracking is not possible util we search of console that object but in typescript we can quickly track object keys and values details with the help of including dot with object name or hover the cursor on object name
+
+// Type Alias/Custom Type - In this terminology we can create own data types with help of typescript's === type keyword and name of datatype let's understand it by further example
+
+// type User = {
+//     name: String;
+//     age: Number;
+//     address?: String;  // we can set key of object as optional with including "?" before the key colon
+// }
+
+
+
+// We can also include function return type as like datatype
+// function userDetails(userDetails: User){
+//     return userDetails;
+// }
+
+// const user = {
+//     name: "Devraj",
+//     age: 27,
+// };
+
+// 
+// console.log(userDetails(user));
+// 
+// type ID = number | String // This pipe sign we call union to apply two types in one datatype
+// 
+// const userId: ID = 231
