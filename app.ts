@@ -62,3 +62,38 @@
 // type ID = number | String // This pipe sign we call union to apply two types in one datatype
 // 
 // const userId: ID = 231
+
+
+// Interface/Contract
+
+interface Transaction{
+    payerAccountNumber: number;
+    payeAccountNumber: number;
+}
+
+interface BankAccount{
+    accountHolder: string;
+    accountNumber: number;
+    balance: number;
+    isActive: boolean;
+    transactions: Transaction[]
+}
+
+const transaction1: Transaction = {
+    payerAccountNumber: 324234123,
+    payeAccountNumber: 333344323453
+}
+
+const transaction2: Transaction = {
+    payerAccountNumber: 4234123,
+    payeAccountNumber: 33333453
+}
+
+const bankAccount:BankAccount = {
+    accountNumber: 2314124,
+    accountHolder: "Devraj",
+    balance: 3434,
+    isActive: true,
+    transactions: [transaction1, transaction2]
+}
+
