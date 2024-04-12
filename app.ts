@@ -69,31 +69,56 @@
 interface Transaction{
     payerAccountNumber: number;
     payeAccountNumber: number;
-}
-
-interface BankAccount{
-    accountHolder: string;
-    accountNumber: number;
-    balance: number;
-    isActive: boolean;
-    transactions: Transaction[]
-}
+};
 
 const transaction1: Transaction = {
-    payerAccountNumber: 324234123,
-    payeAccountNumber: 333344323453
-}
+    payerAccountNumber: 23423423,
+    payeAccountNumber: 54352342
+};
 
 const transaction2: Transaction = {
-    payerAccountNumber: 4234123,
-    payeAccountNumber: 33333453
-}
+    payerAccountNumber: 858573453,
+    payeAccountNumber: 999484898
+};
 
-const bankAccount:BankAccount = {
-    accountNumber: 2314124,
+interface BankAccount {
+    accountNumber: number;
+    accountHolder: string;
+    balance: number;
+    isActive: string;
+    transaction: Transaction[]
+};
+
+const bankAccount: BankAccount = {
+    accountNumber: 34353253245,
     accountHolder: "Devraj",
-    balance: 3434,
-    isActive: true,
-    transactions: [transaction1, transaction2]
+    balance: 3424242,
+    isActive: "Active",
+    transaction:[transaction1, transaction2]
+};
+
+// Extend interfaces
+
+interface Book{
+    name: string;
+    price: number;
 }
 
+interface EBook extends Book {
+    fileSize: number;
+    format: string;
+}
+
+interface AudioBook extends EBook {
+    duration: number;
+}
+
+const book: AudioBook = {
+    name: "Atomic habits",
+    price: 1200,
+    fileSize: 300,
+    format: "audio",
+    duration: 234
+};
+
+console.log(book)
